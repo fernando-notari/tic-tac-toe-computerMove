@@ -18,7 +18,7 @@
 //     };
 //   };
 
-export const handler = async (event) => {
+module.exports.handler = async (event) => {
 
     const { board, xIsNext } = JSON.parse(event.body);
     let randomIndex;
